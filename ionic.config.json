@@ -1,7 +1,7 @@
 {
-  "name": "feldmann",
+  "name": "gomart",
   "integrations": {
-    "capacitor": {}
+    "cordova": {}
   },
   "type": "angular"
 }
