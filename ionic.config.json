@@ -1,0 +1,7 @@
+{
+  "name": "feldmann",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
