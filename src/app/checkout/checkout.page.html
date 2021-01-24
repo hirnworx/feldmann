@@ -1,35 +1,35 @@
 <ion-item>
   <ion-label class="ion-padding">
-    <h1>{{ 'Order Checkout' | translate }}</h1>
+    <h1>{{ 'Bestellinformationen' | translate }}</h1>
   </ion-label>
 </ion-item>
 
 <ion-content [fullscreen]="true">
   <div class="cart" *ngIf="cart.length > 0">
     <ion-grid class="ion-padding">
-      <h4>{{ 'Delivery Address' | translate }}</h4>
+      <h4>{{ 'Lieferadresse' | translate }}</h4>
     </ion-grid>
 
     <ion-list class="animate__animated animate__fadeIn animate__faster">
       <ion-radio-group value="address">
         <ion-item>
           <ion-label
-            ><small class="ion-text-uppercase text-muted">{{ 'HOME' | translate }}</small>
-            <h2>Mr. Surendhar</h2>
-            <h3>849 Koontz Lane</h3>
-            <p>Burbank, California - 91502</p>
-            <p>+1 818-840-1357</p>
+            ><small class="ion-text-uppercase text-muted">{{ 'FeNau Langenzenn' | translate }}</small>
+            <h2>David De Matteo</h2>
+            <h3>Nürnberger Straße 46</h3>
+            <p>90579 Langenzenn</p>
+            <p>+49 818-840-1357</p>
           </ion-label>
           <ion-radio slot="start" color="dark" value="address_1"></ion-radio>
         </ion-item>
 
         <ion-item>
           <ion-label
-            ><small class="ion-text-uppercase text-muted">{{ 'WORK' | translate }}</small>
-            <h2>Mr. Karthikeyan</h2>
-            <h3>866 Tannie Way</h3>
-            <p>Burbank, California - 91502</p>
-            <p>+1 818-123-7745</p>
+            ><small class="ion-text-uppercase text-muted">{{ 'FeNau Fürth' | translate }}</small>
+            <h2>Thomas Nautsch</h2>
+            <h3>Hafenstraße 93</h3>
+            <p>90768 Fürth</p>
+            <p>+49 818-123-7745</p>
           </ion-label>
           <ion-radio slot="start" color="dark" value="address_2"></ion-radio>
         </ion-item>
@@ -37,13 +37,13 @@
 
       <ion-item routerLink="/add-new-address">
         <ion-icon slot="start" name="add-outline"></ion-icon>
-        <ion-label> <h4>Add new address</h4> </ion-label>
+        <ion-label> <h4>Neue Adresse hinzufügen</h4> </ion-label>
       </ion-item>
 
     </ion-list>
 
     <ion-grid class="ion-padding">
-      <h4>{{ 'Item(s) in cart' | translate }}</h4>
+      <h4>{{ 'Artikel' | translate }}</h4>
     </ion-grid>
 
     <ion-list class="animate__animated animate__fadeIn animate__faster">
@@ -53,7 +53,7 @@
             <ion-col size="3">
               <img class="cart-image" src="{{ item?.productImage }}" />
               <small class="ion-text-uppercase text-muted">
-                Qty: {{ item?.quantity }}</small
+                Anzahl: {{ item?.quantity }}</small
               >
             </ion-col>
             <ion-col size="6">
@@ -73,7 +73,7 @@
                 {{ item?.salesPrice }} X {{ item?.quantity }}
               </p>
               <h6 class="ion-text-right no-gap">
-                ₹ {{ item?.salesPrice*item?.quantity }}
+                € {{ item?.salesPrice*item?.quantity }}
               </h6>
             </ion-col>
           </ion-row>
@@ -86,19 +86,19 @@
     >
       <ion-row>
         <ion-col size="9" class="ion-text-right">
-          <small class="text-muted ion-text-uppercase no-gap">{{ 'Subtotal' | translate }}</small>
+          <small class="text-muted ion-text-uppercase no-gap">{{ 'Gesamtsumme' | translate }}</small>
         </ion-col>
-        <ion-col size="3" class="ion-text-right"> ₹ {{ totalCost }} </ion-col>
+        <ion-col size="3" class="ion-text-right"> € {{ totalCost }} </ion-col>
       </ion-row>
 
       <ion-row>
         <ion-col size="9" class="ion-text-right">
           <small class="text-muted ion-text-uppercase no-gap"
-            >{{ 'Shipping Charge' | translate }}</small
+            >{{ 'Versandkosten' | translate }}</small
           >
         </ion-col>
         <ion-col size="3" class="ion-text-right">
-          ₹ {{ shippingCost }}
+          € {{ shippingCost }}
         </ion-col>
       </ion-row>
 
@@ -110,7 +110,7 @@
         </ion-col>
         <ion-col size="3" class="text-right">
           <ion-text class="text-right">
-            -₹ {{ discount }}
+            -₹ {{ Rabatt }}
           </ion-text>
         </ion-col>
       </ion-row>
@@ -118,16 +118,16 @@
       <ion-row>
         <ion-col size="9" class="ion-text-right">
           <small class="text-muted ion-text-uppercase no-gap"
-            >{{ 'Grand Total' | translate }}</small
+            >{{ 'Bruttopreis' | translate }}</small
           >
         </ion-col>
-        <ion-col size="3" class="ion-text-right"> ₹ {{ grandTotal }} </ion-col>
+        <ion-col size="3" class="ion-text-right"> € {{ grandTotal }} </ion-col>
       </ion-row>
     </ion-grid>
 
    
     <ion-grid class="ion-padding">
-      <h4>{{ 'Have a coupon code?' | translate }}</h4>
+      <h4>{{ 'Gutscheincode?' | translate }}</h4>
       <ion-row>
         <ion-col size="8">
       <ion-item>
@@ -142,7 +142,7 @@
         color="dark"
         class="ion-text-uppercase"
         expand="full"
-        >{{ 'Apply' | translate }}</ion-button
+        >{{ 'Anwenden' | translate }}</ion-button
       >
     </ion-col>
       </ion-row>
@@ -155,15 +155,15 @@
     </ion-grid>
 
     <ion-grid class="ion-padding">
-      <h4>{{ 'Payment method' | translate }}</h4>
+      <h4>{{ 'Bezahlart' | translate }}</h4>
       <ion-list>
         <ion-radio-group value="pay_mode">
           <ion-item>
-            <ion-label> <h4>Cash on delivery</h4> </ion-label>
+            <ion-label> <h4>Nachname</h4> </ion-label>
             <ion-radio slot="start" color="dark" value="cod"></ion-radio>
           </ion-item>
           <ion-item>
-            <ion-label> <h4>Netbanking</h4> </ion-label>
+            <ion-label> <h4>Rechnung</h4> </ion-label>
             <ion-radio slot="start" color="dark" value="netbanking"></ion-radio>
           </ion-item>
           <ion-item>
@@ -179,10 +179,10 @@
         <ion-row>
           <ion-col size="6">
             <small class="text-muted ion-text-uppercase no-gap"
-              >{{ 'Grand Total' | translate }}</small
+              >{{ 'Brutto Gesamtsumme' | translate }}</small
             >
             <ion-text color="dark"
-              ><h4 class="no-gap">₹ {{ grandTotal }}</h4></ion-text
+              ><h4 class="no-gap">€ {{ grandTotal }}</h4></ion-text
             >
           </ion-col>
 
@@ -193,7 +193,7 @@
               class="ion-text-uppercase"
               size="default"
               expand="block"
-              >{{ 'Place Order' | translate }}</ion-button
+              >{{ 'Jetzt Bestellen!' | translate }}</ion-button
             >
           </ion-col>
         </ion-row>

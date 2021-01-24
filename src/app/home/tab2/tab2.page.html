@@ -1,7 +1,7 @@
 <ion-header>
     <ion-item>
       <ion-label class="ion-padding">
-        <h1>{{ 'My Wishlist' | translate }}</h1>
+        <h1>{{ 'Projektwarenkorb' | translate }}</h1>
       </ion-label>
       <ion-icon
         class="ion-text-right"
@@ -37,12 +37,12 @@
                 ></ion-icon>
               </p>
               <small class="ion-text-uppercase no-gap ion-margin-top text-muted"
-                >{{ item?.off }}% Off</small
+                >{{ item?.off }}% Rabatt</small
               >
               <p class="ion-text-uppercase no-gap x-small text-muted">
                 <del>{{ item?.regularPrice }}</del>
               </p>
-              <h6 class="ion-text-right no-gap">₹ {{ item?.salesPrice }}</h6>
+              <h6 class="ion-text-right no-gap">€ {{ item?.salesPrice }}</h6>
             </ion-col>
           </ion-row>
           <ion-row> </ion-row>
@@ -56,7 +56,7 @@
     *ngIf="wishlist.length == 0"
   >
     <img src="../../../assets/empty-wishlist.png" alt="" />
-    <h4 class="text-muted ion-text-center">{{ 'Wishlist is empty' | translate }}!</h4>
+    <h4 class="text-muted ion-text-center">{{ 'Keine Projekte angelegt' | translate }}!</h4>
     <br />
     <div class="ion-text-center">
       <ion-button
@@ -64,7 +64,7 @@
         routerLink="/home"
         class="ion-text-uppercase"
         shape="round"
-        >{{ 'Start Shopping' | translate }}</ion-button
+        >{{ 'Jetzt bestellen!' | translate }}</ion-button
       >
     </div>
   </div>

@@ -17,18 +17,18 @@ export class SingleProductViewPage implements OnInit {
     {
         "product_id":3,
         "productImage":"../../../assets/products/iphone-12-mini-hero-150x150.jpeg",
-        "productName":"Glasklemme",
+        "productName":"Glaspunkthalter",
         "brand":"Apple",
         "off":53,
         "shortName":"iPhone SE 32GB",
-        "productLongDescription":"iPhone SE packs a remarkably powerful chip into our most popular size at our most affordable price. It’s just what you’ve been waiting for.",
-        "productShortDescription":"iPhone SE packs a remarkably powerful chip into our most popular size at our most affordable price. ",
-        "regularPrice":39000,
-        "salesPrice":39000
+        "productLongDescription":"Oberteil von 62mm Glaspunkthalter, inkl. Gummipaar, ohne Schraube, V2A",
+        "productShortDescription":"Oberteil von 62mm Glaspunkthalter, inkl. Gummipaar, ohne Schraube, V2A ",
+        "regularPrice":7.80,
+        "salesPrice":5.60
     },{
       "images":[
-      "../../../assets/products/41HIWOuRiwL._AA300_.jpg", 
-      "../../../assets/products/41KDL-Nnc4L._AA300_.jpg"]
+      "../../../assets/products/glaspunkthalter.jpg", 
+      "../../../assets/products/glaspunkthalter2.jpg"]
     }    
 ];
 
@@ -36,47 +36,47 @@ export class SingleProductViewPage implements OnInit {
 relatedProducts = [
   {
       "product_id":1,
-      "productImage":"../../../assets/products/iphone-12-pro-blue-150x150.png",
-      "productName":"Apple iPhone 12 32GB",
+      "productImage":"../../../assets/products/item_1.png",
+      "productName":"Ronde 62mm",
       "brand":"Apple",
-      "shortName":"iPhone 12 32GB",
+      "shortName":"Ronde",
       "off":45,
       "productLongDescription":"A14 Bionic, the fastest chip in a smartphone. An edge-to-edge OLED display. Ceramic Shield with four times better drop performance. And Night mode on every camera. iPhone 12 has it all — in two perfect sizes.",
       "productShortDescription":"A14 Bionic, the fastest chip in a smartphone. An edge-to-edge OLED display.",
-      "regularPrice":69000,
-      "salesPrice":69900
+      "regularPrice":4.80,
+      "salesPrice":3.20
   },
   {
       "product_id":2,
-      "productImage":"../../../assets/products/iphone-12-mini-hero-150x150.jpeg",
-      "productName":"Apple iPhone 12 Pro  64GB",
+      "productImage":"../../../assets/products/handlaufhalter.jpg?resize=150%2C150&ssl=1",
+      "productName":"Handlaufhalter",
       "brand":"Apple",
       "off":45,
-      "shortName":"iPhone 12 Pro 64GB",
+      "shortName":"Handlaufhalter",
       "productLongDescription":"A14 Bionic rockets past every other smartphone chip. The Pro camera system takes low-light photography to the next level — with an even bigger jump on iPhone 12 Pro Max. And Ceramic Shield delivers four times better drop performance. Let’s see what this thing can do.",
       "productShortDescription":"A14 Bionic rockets past every other smartphone chip.",
-      "regularPrice":199000,
-      "salesPrice":119000
+      "regularPrice":12.90,
+      "salesPrice":10.20
   },
   {
       "product_id":3,
-      "productImage":"../../../assets/products/iPhone-SE-2020-Red.jpg?resize=150%2C150&ssl=1",
-      "productName":"Apple iPhone SE 32GB",
+      "productImage":"../../../assets/products/handlaufhalter.jpg?resize=150%2C150&ssl=1",
+      "productName":"Handlaufhalter Spezial",
       "brand":"Apple",
       "off":53,
-      "shortName":"iPhone SE 32GB",
+      "shortName":"Handlaufhalter Spezial",
       "productLongDescription":"iPhone SE packs a remarkably powerful chip into our most popular size at our most affordable price. It’s just what you’ve been waiting for.",
       "productShortDescription":"iPhone SE packs a remarkably powerful chip into our most popular size at our most affordable price. ",
-      "regularPrice":39000,
-      "salesPrice":39000
+      "regularPrice":12.90,
+      "salesPrice":9.10
   },
   {
       "product_id":4,
-      "productImage":"../../../assets/products/APPLE-IPHONE-11-PRO-MAX-Midnight-Green-CellucityPhoneHub-150x150.png",
-      "productName":"Apple iPhone 11 32GB",
+      "productImage":"../../../assets/products/glaspunkthalter.jpg",
+      "productName":"Glaspunkthalter 40mm",
       "brand":"Apple",
       "off":25,
-      "shortName":"iPhone 11 32GB",
+      "shortName":"Glaspunkthalter Edelstahl",
       "productLongDescription":"As part of our efforts to reach our environmental goals, iPhone 11 does not include a power adapter or EarPods. Included in the box is a USB‑C to Lightning cable that supports fast charging and is compatible with USB‑C power adapters and computer ports.",
       "productShortDescription":"As part of our efforts to reach our environmental goals, iPhone 11 does not include a power adapter or EarPods.",
       "regularPrice":54000,
@@ -84,31 +84,31 @@ relatedProducts = [
   },
   {
       "product_id":5,
-      "productImage":"../../../assets/products/apple-macbook-pro-silver-7-150x150.jpg",
-      "productName":"iMac Intel Xeon 8GB 4K Retina",
+      "productImage":"../../../assets/products/39ed8e8d-01b0-4d86-8cb0-305b4869bb48.__CR288,248,496,496_PT0_SX300_V1___.jpg",
+      "productName":"Briefkasten Superior",
       "brand":"Apple",
       "off":45,
-      "shortName":"Apple iMac",
+      "shortName":"Briefkasten",
       "productLongDescription":"The all-in-one for all. If you can dream it, you can do it on iMac. It’s beautifully designed, incredibly intuitive and packed with powerful tools that let you take any idea to the next level. And the new 27-inch model elevates the experience in every way, with faster processors and graphics, expanded memory and storage, enhanced audio and video capabilities, and an even more stunning Retina 5K display. It’s the desktop that does it all — better and faster than ever.",
       "productShortDescription":"The all-in-one for all. If you can dream it, you can do it on iMac.",
-      "regularPrice": 99000,
-      "salesPrice": 99900
+      "regularPrice": 33.40,
+      "salesPrice": 30.20
   },
   {
       "product_id":6,
-      "productImage":"../../../assets/products/Apple-MacBook-Air-150x150.png",
-      "productName":"Apple MacBook Air 128GB SSD",
+      "productImage":"../../../assets/products/b5b4e08c1b97e8ed0c403bebda20d789.jpg",
+      "productName":"Briefkasten Design",
       "brand":"Apple",
       "off":15,
-      "shortName":"MacBook Air",
+      "shortName":"Briefkasten",
       "productLongDescription":"The incredibly thin and light MacBook Air is now more powerful than ever. It features a brilliant Retina display, new Magic Keyboard, Touch ID, processors with up to twice the performance,1 faster graphics and double the storage capacity. The sleek wedge-shaped design is created from 100% recycled aluminium, making it the greenest Mac ever.2 And with all-day battery life, our most popular Mac is your perfectly portable, do-it-all notebook.",
       "productShortDescription":"The incredibly thin and light MacBook Air is now more powerful than ever.",
-      "regularPrice":99090,
-      "salesPrice":92900
+      "regularPrice":78,
+      "salesPrice":55.20
   },
   {
       "product_id":7,
-      "productImage":"../../../assets/products/apple-macbook-pro-silver-7-150x150.jpg",
+      "productImage":"../../../assets/products/item_2.png",
       "productName":"test",
       "brand":"Apple",
       "off":22,

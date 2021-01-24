@@ -1,7 +1,7 @@
 <ion-header>
   <ion-item>
     <ion-label class="ion-padding">
-      <h1>{{ 'Order Details' | translate }}</h1>
+      <h1>{{ 'Bestelldetails' | translate }}</h1>
     </ion-label>
   </ion-item>
 </ion-header>
@@ -15,7 +15,7 @@
           <ion-col size="3" routerLink="/single-product-view">
             <img class="cart-image" src="{{ item?.productImage }}" />
             <small class="ion-text-uppercase text-muted">
-              Qty: {{ item?.quantity }}</small
+              Anzahl: {{ item?.quantity }}</small
             >
           </ion-col>
           <ion-col size="6" routerLink="/single-product-view">
@@ -29,7 +29,7 @@
               {{ item?.salesPrice }} X {{ item?.quantity }}
             </p>
             <h6 class="ion-text-right ion-margin-top">
-              ₹ {{ item?.salesPrice*item?.quantity }}
+              € {{ item?.salesPrice*item?.quantity }}
             </h6>
           </ion-col>
         </ion-row>
@@ -42,38 +42,38 @@
   >
     <ion-row>
       <ion-col size="9" class="ion-text-right">
-        <small class="text-muted ion-text-uppercase no-gap">{{ 'Subtotal' | translate }}</small>
+        <small class="text-muted ion-text-uppercase no-gap">{{ 'Gesamtsumme' | translate }}</small>
       </ion-col>
       <ion-col size="3" class="ion-text-right">
-        ₹ {{ orderDetails?.subTotal }}
+        € {{ orderDetails?.subTotal }}
       </ion-col>
     </ion-row>
 
     <ion-row>
       <ion-col size="9" class="ion-text-right">
         <small class="text-muted ion-text-uppercase no-gap"
-          >{{ 'Shipping Charge' | translate }}</small
+          >{{ 'Versandkosten' | translate }}</small
         >
       </ion-col>
       <ion-col size="3" class="ion-text-right">
-        ₹ {{ orderDetails?.shippingCost }}
+        € {{ orderDetails?.shippingCost }}
       </ion-col>
     </ion-row>
 
     <ion-row>
       <ion-col size="9" class="ion-text-right">
-        <small class="text-muted ion-text-uppercase no-gap">{{ 'Grand Total' | translate }}</small>
+        <small class="text-muted ion-text-uppercase no-gap">{{ 'Brutto Einkaufswert' | translate }}</small>
       </ion-col>
       <ion-col size="3" class="ion-text-right">
-        ₹ {{ orderDetails?.grandTotal }}
+        € {{ orderDetails?.grandTotal }}
       </ion-col>
     </ion-row>
 
-    <h6>{{ 'Payment method' | translate }}: {{ orderDetails?.payMode }}</h6>
+    <h6>{{ 'Bezahlart' | translate }}: {{ orderDetails?.payMode }}</h6>
   </ion-grid>
 
   <ion-grid class="ion-padding">
-    <small class="text-muted ion-text-uppercase">{{ 'Delivery Address' | translate }}</small>
+    <small class="text-muted ion-text-uppercase">{{ 'Lieferadresse' | translate }}</small>
   </ion-grid>
 
   <ion-list class="animate__animated animate__fadeIn animate__faster">
@@ -82,10 +82,10 @@
         <ion-icon size="large" name="home-outline"></ion-icon>
       </ion-avatar>
       <ion-label>
-        <h2>Mr. Karthikeyan</h2>
-        <h3>3423 Jehovah Drive</h3>
-        <p>Roanoke, Virginia - 24019</p>
-        <p>+1 540-529-3606</p>
+        <h2>FeNau GmbH</h2>
+        <h3>Hafenstraße 93</h3>
+        <p>90768 Fürth</p>
+        <p>+49 540-529-3606</p>
       </ion-label>
     </ion-item>
   </ion-list>
@@ -97,8 +97,8 @@
         <span class="order-track-status-line"></span>
       </div>
       <div class="order-track-text">
-        <p class="order-track-text-stat no-gap">Order Placed</p>
-        <span class="order-track-text-sub">21st November, 2020</span>
+        <p class="order-track-text-stat no-gap">Bestellt</p>
+        <span class="order-track-text-sub">21. November, 2020</span>
       </div>
     </div>
     <div class="order-track-step">
@@ -107,8 +107,8 @@
         <span class="order-track-status-line"></span>
       </div>
       <div class="order-track-text">
-        <p class="order-track-text-stat no-gap">Order Processed</p>
-        <span class="order-track-text-sub">21st November, 2020</span>
+        <p class="order-track-text-stat no-gap">Bearbeitet</p>
+        <span class="order-track-text-sub">21. November, 2020</span>
       </div>
     </div>
     <div class="order-track-step">
@@ -117,8 +117,8 @@
         <span class="order-track-status-line"></span>
       </div>
       <div class="order-track-text">
-        <p class="order-track-text-stat no-gap">Shipped to US</p>
-        <span class="order-track-text-sub">21st November, 2020</span>
+        <p class="order-track-text-stat no-gap">Versendet</p>
+        <span class="order-track-text-sub">21. November, 2020</span>
       </div>
     </div>
     <div class="order-track-step">
@@ -127,8 +127,8 @@
         <span class="order-track-status-line"></span>
       </div>
       <div class="order-track-text">
-        <p class="order-track-text-stat no-gap">Order Dispatched at VA</p>
-        <span class="order-track-text-sub">21st November, 2020</span>
+        <p class="order-track-text-stat no-gap">Im Zielpaketzentrum</p>
+        <span class="order-track-text-sub">21. November, 2020</span>
       </div>
     </div>
     <div class="order-track-step">
@@ -137,8 +137,8 @@
         <span class="order-track-status-line"></span>
       </div>
       <div class="order-track-text">
-        <p class="order-track-text-stat no-gap">Order Deliverd</p>
-        <span class="order-track-text-sub">21st November, 2020</span>
+        <p class="order-track-text-stat no-gap">Ausgeliefert</p>
+        <span class="order-track-text-sub">21. November, 2020</span>
       </div>
     </div>
   </div>
