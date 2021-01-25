@@ -1,7 +1,8 @@
 {
   "name": "gomart",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }
